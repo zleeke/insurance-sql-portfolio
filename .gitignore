@@ -1,0 +1,35 @@
+# Python cache and build files
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+.venv/
+pip-wheel-metadata/
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+
+# Test and coverage
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Editor and environment
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local database and generated data files
+*.sqlite
+*.db
+*.bak
+*.tmp
+
+# Jupyter
+.ipynb_checkpoints/
