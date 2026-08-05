@@ -20,10 +20,10 @@ Build a small but credible insurance analytics database using synthetic data for
 ## Recommended tool stack
 Use only free tools:
 - MacBook: Terminal + VS Code
-- Version control: Git + GitHub
-- Database: SQLite or DuckDB for local use
-- SQL editor: DB Browser for SQLite or VS Code SQL extensions
-- Data generation: Python (built-in libraries or pandas, if available)
+- Version control: GitHub
+- Database: SQLite
+- SQL editor: VSCode SQLite Extension
+- Data generation: Python (Faker library)
 - Documentation: Markdown in the repo
 
 ## Project structure
@@ -39,9 +39,14 @@ Before writing SQL, define the narrative of the project.
 - Choose one clear business theme: insurance risk, claims performance, or customer segmentation.
   - For my theme, I want to focus on claims performance. I want to be able to analyze the claims my insureds have had (both home and auto).
 - Write 3 to 5 business questions you want the project to answer.
-  - What are the average count of claims per househould in my dataset?
-  - What is the average claim paid amount per claim?
-  - What is the average insured tenure in my dataset?
+  - What share of active policies have at least one claim in a year?
+  - What is total written premium and average premium per policy_type?
+  - What is average claim_amount by claim_type and coverage_type?
+  - How do monthly claim counts and paid amounts trend over time?
+  - What is the distribution of time from claim_date to payment_date?
+  - Which customer cohorts (age group, household_type, region) show highest frequency/severity?
+  - What is loss ratio = sum(claim_paid)/sum(premium) by policy_type and state?
+  - Which states or regions have highest frequency and highest average severity?
 - Frame the project as: "An end-to-end SQL project using synthetic insurance data to analyze claims and policy performance."
 
 ## Phase 2: Design the database
